@@ -13,57 +13,7 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   bool icecream = false,pizza = false,burger = false,salad = false;
-//   Stream? fooditemstream;
-//   onloading()async{
-//     fooditemstream = await Databasemethod().getfooditem('Pizza');
-//     setState(() {
-      
-//     });
-//   }
-//   @override
-//   void initState() {
-//     onloading();
-//     super.initState();
-//   }
-//   Widget allitems(){
-//     return StreamBuilder(stream: fooditemstream, builder: (context,AsyncSnapshot snapshot){
-// return snapshot.hasData? ListView.builder(
-//   padding: EdgeInsets.zero,
-//   itemCount: snapshot.data.docs.length,
-//   shrinkWrap: true,
-//   scrollDirection: Axis.horizontal,
-//   itemBuilder: (context,index){
-// DocumentSnapshot ds = snapshot.data.docs[index];
-// return GestureDetector(
-//                     onTap: (){
-//                       Navigator.push(context, MaterialPageRoute(builder: (context)=>details()));
-//                     },
-                    // child: Container(
-                    //   margin: EdgeInsets.all(4),
-                    //   child: Material(
-                    //     elevation: 5,
-                    //     borderRadius: BorderRadius.circular(20),
-                    //     child: Container(
-                    //       padding: EdgeInsets.all(14),
-                    //       child: Column(
-                    //         crossAxisAlignment: CrossAxisAlignment.start,
-                    //         children: [
-                    //           Image.network(ds[Image],height: 150,width: 150,fit: BoxFit.cover,),
-                              
-                    //           Text(ds['name'],style: Appwidget.boldfieldtextstyle(),),
-                    //           SizedBox(height: 5,),
-                    //           Text('Fresh And Healthy',style: Appwidget.lightlinetextstyle(),),
-                    //           SizedBox(height: 5,),
-                    //           Text("\$" + ds['price'],style: Appwidget.semiboldtextstyle(),)
-                    //         ],
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                  // );
-// }):CircularProgressIndicator();
-//     });
-//   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -202,6 +152,7 @@ class _HomepageState extends State<Homepage> {
                  ),
                ),
              ),
+             SizedBox(height: 20,),
               Container(
               margin: EdgeInsets.only(right: 5),
                child: Material(

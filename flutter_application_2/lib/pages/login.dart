@@ -9,11 +9,9 @@ import 'package:flutter_application_2/pages/signup.dart';
 import 'package:flutter_application_2/widget/Widget_suppot.dart';
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
-
   @override
   State<LogIn> createState() => _LogInState();
 }
-
 class _LogInState extends State<LogIn> {
 
 String email = "",password = "";
@@ -34,11 +32,7 @@ try{
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Please Enter Correct Password',style: TextStyle(color: Colors.black,fontSize: 18),)));
   }
 }
-
 }
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
